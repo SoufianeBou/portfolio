@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2f5f9" />
     <meta
       name="description"
-      content="Portfolio — développement web, design et projets personnels."
+      content="Développeur senior Java & Angular — 9 ans d’expérience : architectures distribuées, APIs, fronts enterprise et bonnes pratiques."
     />
-    <title>Portfolio — Votre nom</title>
+    <title>Développeur Senior Java & Angular — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +17,15 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="site-2d">
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a href="#" class="logo" aria-label="Accueil">Portfolio</a>
+        <a href="#" class="logo" aria-label="Accueil"
+          ><span class="logo-java">Java</span
+          ><span class="logo-sep" aria-hidden="true"> · </span
+          ><span class="logo-ng">Angular</span></a
+        >
         <button
           type="button"
           class="nav-toggle"
@@ -33,9 +38,28 @@
         <nav id="nav-principale" class="nav" aria-label="Navigation principale">
           <ul class="nav-list">
             <li><a href="#apropos">À propos</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projets">Réalisations</a></li>
+            <li><a href="#competences">Stack</a></li>
             <li><a href="#contact" class="nav-cta">Contact</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/votre-profil"
+                class="nav-linkedin"
+                rel="noopener noreferrer"
+                target="_blank"
+                >LinkedIn — profil</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/votre-page"
+                class="nav-linkedin nav-linkedin--alt"
+                rel="noopener noreferrer"
+                target="_blank"
+                >LinkedIn — entreprise</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -44,21 +68,21 @@
     <main id="contenu">
       <section class="hero">
         <div class="wrap hero-inner">
-          <p class="hero-tag accent">Développeur·euse & créateur·rice</p>
+          <p class="hero-tag accent">Développeur senior · 9 ans d’expérience</p>
           <h1 class="hero-title">
-            Je conçois des expériences web<br />
-            <span class="hero-title-muted">claires, utiles et agréables.</span>
+            Back-end Java &amp; front<br />
+            <span class="hero-title-muted">Angular pour des produits fiables et maintenables.</span>
           </h1>
           <p class="hero-lead">
-            Bienvenue sur mon portfolio. Remplacez ce texte par votre accroche :
-            votre métier, ce que vous aimez faire et ce que vous proposez.
+            Je conçois et fais évoluer des applications enterprise : services REST,
+            intégration avec l’écosystème Spring, fronts Angular modulaires (standalone,
+            signals, RxJS), qualité de code, tests et collaboration en équipe agile.
           </p>
           <div class="hero-actions">
-            <a href="#projets" class="btn btn-primary">Voir les projets</a>
-            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+            <a href="#experience" class="btn btn-primary">Parcours</a>
+            <a href="#contact" class="btn btn-ghost">Échanger</a>
           </div>
         </div>
-        <div class="hero-glow" aria-hidden="true"></div>
       </section>
 
       <section id="apropos" class="section section-about">
@@ -66,69 +90,139 @@
           <div>
             <h2 class="section-title">À propos</h2>
             <p class="section-intro">
-              Quelques lignes sur votre parcours : formation, expériences,
-              ce qui vous motive. Gardez un ton authentique ; les visiteurs
-              cherchent souvent la personne derrière le CV.
+              Après <strong>neuf ans</strong> sur des projets métiers (banque,
+              assurance, industrie ou SaaS B2B — à adapter selon votre profil), je
+              privilégie des architectures claires, une documentation utile et un
+              déploiement maîtrisé. J’aime faire le lien entre besoin métier,
+              contraintes techniques et dette technique raisonnable.
+            </p>
+            <p class="section-intro section-intro-follow">
+              En équipe, je contribue aux revues de code, aux choix d’outillage
+              (CI/CD, qualimétrie) et au mentorat des profils intermédiaires.
             </p>
           </div>
           <div class="about-card">
             <h3 class="about-card-title">En bref</h3>
             <ul class="about-list">
-              <li><strong>Lieu</strong> — Ville, pays</li>
-              <li><strong>Disponibilité</strong> — Freelance, CDI, hybride…</li>
-              <li><strong>Centres d’intérêt</strong> — Accessibilité, OSS, design…</li>
+              <li><strong>Rôle</strong> — Lead / senior full-stack orienté Java &amp; Angular</li>
+              <li><strong>Pratiques</strong> — Clean code, TDD ciblé, revues, pair programming</li>
+              <li><strong>Secteurs</strong> — À personnaliser (finance, e-commerce, etc.)</li>
+              <li><strong>Langues</strong> — Français · Anglais professionnel</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <section id="experience" class="section section-experience">
+        <div class="wrap">
+          <h2 class="section-title">Expérience</h2>
+          <p class="section-intro section-intro-narrow">
+            Aperçu chronologique type — remplacez par vos postes, clients et
+            réalisations réelles.
+          </p>
+          <ol class="timeline" aria-label="Parcours professionnel">
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Lead développeur Java / Angular</span>
+                  <time datetime="2022">2022 — présent</time>
+                </div>
+                <p class="timeline-org">Entreprise ou groupe — ville / remote</p>
+                <p class="timeline-desc">
+                  Pilotage technique d’évolutions majeures sur une plateforme
+                  modulaire : Spring Boot, OAuth2 / OIDC, Angular avec lazy loading
+                  et librairie de composants interne. Mise en place de pipelines
+                  GitLab CI, tests d’intégration (Testcontainers) et observabilité.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Développeur senior Java</span>
+                  <time datetime="2018">2018 — 2022</time>
+                </div>
+                <p class="timeline-org">SSI / éditeur — région</p>
+                <p class="timeline-desc">
+                  Conception d’APIs REST et batchs (Spring Batch, scheduling),
+                  intégration message (Kafka ou RabbitMQ selon contexte), bases SQL
+                  et optimisation de requêtes. Démarrage de la migration front vers
+                  Angular pour remplacement d’applications legacy.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Développeur Java JEE / full-stack</span>
+                  <time datetime="2015">2015 — 2018</time>
+                </div>
+                <p class="timeline-org">ESN ou startup — France</p>
+                <p class="timeline-desc">
+                  Maintenance et évolutions sur stack historique (Java EE / Spring
+                  MVC), contribution aux spécifications, méthodes agiles (Scrum),
+                  montée en compétence sur le front (AngularJS puis Angular).
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <section id="projets" class="section section-projects">
         <div class="wrap">
-          <h2 class="section-title">Projets</h2>
+          <h2 class="section-title">Réalisations marquantes</h2>
           <p class="section-intro section-intro-narrow">
-            Une sélection de réalisations. Remplacez titres, descriptions et
-            liens par les vôtres.
+            Exemples de livrables crédibles pour un profil senior — adaptez les
+            titres aux projets confidentiels ou publiez des cas techniques anonymisés.
           </p>
           <ul class="project-grid">
             <li>
               <article class="project-card">
                 <div class="project-meta">
-                  <span class="project-type">Application web</span>
-                  <time datetime="2025">2025</time>
+                  <span class="project-type">Plateforme métier</span>
+                  <time datetime="2024">2024</time>
                 </div>
-                <h3 class="project-title">Nom du projet</h3>
+                <h3 class="project-title">Refonte module facturation</h3>
                 <p class="project-desc">
-                  Courte description : problème résolu, stack utilisée, votre rôle.
+                  Hexagonal côté back (ports / adapters), Angular avec state géré
+                  (NgRx ou signals), contrats OpenAPI et tests contractuels. Réduction
+                  des incidents en production mesurable.
                 </p>
-                <a href="#" class="project-link">Voir le projet →</a>
+                <span class="project-tagline">Spring Boot · Angular · PostgreSQL</span>
               </article>
             </li>
             <li>
               <article class="project-card">
                 <div class="project-meta">
-                  <span class="project-type">Site vitrine</span>
-                  <time datetime="2024">2024</time>
+                  <span class="project-type">Intégration &amp; événements</span>
+                  <time datetime="2023">2023</time>
                 </div>
-                <h3 class="project-title">Autre projet</h3>
+                <h3 class="project-title">Bus d’événements inter-applications</h3>
                 <p class="project-desc">
-                  Un second exemple pour montrer la variété de vos compétences.
+                  Producteurs et consommateurs idempotents, schémas versionnés,
+                  dead-letter queues, dashboard de suivi. Migration progressive sans
+                  downtime des flux critiques.
                 </p>
-                <a href="#" class="project-link">Détails →</a>
+                <span class="project-tagline">Kafka · Spring · Resilience4j</span>
               </article>
             </li>
             <li>
               <article class="project-card">
                 <div class="project-meta">
-                  <span class="project-type">Outil / API</span>
-                  <time datetime="2024">2024</time>
+                  <span class="project-type">Developer experience</span>
+                  <time datetime="2022">2022</time>
                 </div>
-                <h3 class="project-title">Projet technique</h3>
+                <h3 class="project-title">Standardisation des déploiements</h3>
                 <p class="project-desc">
-                  Idéal pour mettre en avant le back-end, les tests ou l’infra.
+                  Helm / Docker, environnements reproductibles, secrets externalisés,
+                  qualité Sonar intégrée au merge request. Temps de mise en route des
+                  nouveaux développeurs divisé.
                 </p>
-                <a href="https://github.com" class="project-link" rel="noopener noreferrer"
-                  >Code source →</a
-                >
+                <span class="project-tagline">Kubernetes · GitLab CI · SonarQube</span>
               </article>
             </li>
           </ul>
@@ -137,16 +231,51 @@
 
       <section id="competences" class="section section-skills">
         <div class="wrap">
-          <h2 class="section-title">Compétences</h2>
-          <ul class="skill-chips" aria-label="Liste de compétences">
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>React ou Vue</li>
-            <li>Node.js</li>
-            <li>Git</li>
-            <li>Figma</li>
-            <li>Accessibilité</li>
-          </ul>
+          <h2 class="section-title">Stack &amp; outils</h2>
+          <p class="section-intro section-intro-narrow skill-intro">
+            Domaines où je suis à l’aise au quotidien et en conception.
+          </p>
+          <div class="skill-groups" role="list">
+            <div class="skill-group" role="listitem">
+              <h3 class="skill-group-title">Back-end Java</h3>
+              <ul class="skill-chips" aria-label="Compétences back-end">
+                <li>Java 17+</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>Spring Data JPA</li>
+                <li>REST &amp; OpenAPI</li>
+                <li>JUnit 5</li>
+                <li>Testcontainers</li>
+                <li>Maven / Gradle</li>
+              </ul>
+            </div>
+            <div class="skill-group" role="listitem">
+              <h3 class="skill-group-title">Front Angular</h3>
+              <ul class="skill-chips" aria-label="Compétences front">
+                <li>Angular 17+</li>
+                <li>TypeScript</li>
+                <li>RxJS</li>
+                <li>Signals</li>
+                <li>Standalone components</li>
+                <li>Angular Material</li>
+                <li>Jest / Karma</li>
+                <li>Storybook</li>
+              </ul>
+            </div>
+            <div class="skill-group" role="listitem">
+              <h3 class="skill-group-title">Data &amp; ops</h3>
+              <ul class="skill-chips" aria-label="Compétences data et ops">
+                <li>PostgreSQL</li>
+                <li>Oracle / SQL Server</li>
+                <li>Kafka / RabbitMQ</li>
+                <li>Redis</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Prometheus / Grafana</li>
+                <li>Git · GitLab · GitHub</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -154,9 +283,9 @@
         <div class="wrap contact-box">
           <h2 class="section-title">Contact</h2>
           <p class="contact-text">
-            Un projet, une question ? Écrivez-moi à
+            CDI, mission ou échange technique : écrivez-moi à
             <a href="mailto:contact@exemple.com">contact@exemple.com</a>
-            ou retrouvez-moi sur les réseaux.
+            ou retrouvez-moi sur LinkedIn et GitHub.
           </p>
           <ul class="social-links">
             <li>
@@ -166,7 +295,7 @@
               <a href="https://linkedin.com" rel="noopener noreferrer">LinkedIn</a>
             </li>
             <li>
-              <a href="https://mastodon.social" rel="noopener noreferrer">Mastodon</a>
+              <a href="https://gitlab.com" rel="noopener noreferrer">GitLab</a>
             </li>
           </ul>
         </div>
@@ -175,7 +304,9 @@
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <p>© <span id="year"></span> — Votre nom. Fabriqué en HTML & CSS statiques.</p>
+        <p>
+          © <span id="year"></span> — Votre nom. Site statique (HTML · CSS · JS).
+        </p>
       </div>
     </footer>
 
