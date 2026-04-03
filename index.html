@@ -1,35 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Statique</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <h1>Bienvenue sur mon site !</h1>
-    <p>Ceci est un site HTML statique hébergé sur <strong>GitHub Pages</strong>.</p>
-    <p>Visitez <a href="https://github.com">GitHub</a> pour plus d'informations.</p>
-    <p>Soufiane BOUSSAID</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio — développement web, design et projets personnels."
+    />
+    <title>Portfolio — Votre nom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="#" class="logo" aria-label="Accueil">Portfolio</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-principale"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <nav id="nav-principale" class="nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <p class="hero-tag accent">Développeur·euse & créateur·rice</p>
+          <h1 class="hero-title">
+            Je conçois des expériences web<br />
+            <span class="hero-title-muted">claires, utiles et agréables.</span>
+          </h1>
+          <p class="hero-lead">
+            Bienvenue sur mon portfolio. Remplacez ce texte par votre accroche :
+            votre métier, ce que vous aimez faire et ce que vous proposez.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Voir les projets</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </section>
+
+      <section id="apropos" class="section section-about">
+        <div class="wrap grid-two">
+          <div>
+            <h2 class="section-title">À propos</h2>
+            <p class="section-intro">
+              Quelques lignes sur votre parcours : formation, expériences,
+              ce qui vous motive. Gardez un ton authentique ; les visiteurs
+              cherchent souvent la personne derrière le CV.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3 class="about-card-title">En bref</h3>
+            <ul class="about-list">
+              <li><strong>Lieu</strong> — Ville, pays</li>
+              <li><strong>Disponibilité</strong> — Freelance, CDI, hybride…</li>
+              <li><strong>Centres d’intérêt</strong> — Accessibilité, OSS, design…</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section section-projects">
+        <div class="wrap">
+          <h2 class="section-title">Projets</h2>
+          <p class="section-intro section-intro-narrow">
+            Une sélection de réalisations. Remplacez titres, descriptions et
+            liens par les vôtres.
+          </p>
+          <ul class="project-grid">
+            <li>
+              <article class="project-card">
+                <div class="project-meta">
+                  <span class="project-type">Application web</span>
+                  <time datetime="2025">2025</time>
+                </div>
+                <h3 class="project-title">Nom du projet</h3>
+                <p class="project-desc">
+                  Courte description : problème résolu, stack utilisée, votre rôle.
+                </p>
+                <a href="#" class="project-link">Voir le projet →</a>
+              </article>
+            </li>
+            <li>
+              <article class="project-card">
+                <div class="project-meta">
+                  <span class="project-type">Site vitrine</span>
+                  <time datetime="2024">2024</time>
+                </div>
+                <h3 class="project-title">Autre projet</h3>
+                <p class="project-desc">
+                  Un second exemple pour montrer la variété de vos compétences.
+                </p>
+                <a href="#" class="project-link">Détails →</a>
+              </article>
+            </li>
+            <li>
+              <article class="project-card">
+                <div class="project-meta">
+                  <span class="project-type">Outil / API</span>
+                  <time datetime="2024">2024</time>
+                </div>
+                <h3 class="project-title">Projet technique</h3>
+                <p class="project-desc">
+                  Idéal pour mettre en avant le back-end, les tests ou l’infra.
+                </p>
+                <a href="https://github.com" class="project-link" rel="noopener noreferrer"
+                  >Code source →</a
+                >
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="competences" class="section section-skills">
+        <div class="wrap">
+          <h2 class="section-title">Compétences</h2>
+          <ul class="skill-chips" aria-label="Liste de compétences">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React ou Vue</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>Accessibilité</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="wrap contact-box">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-text">
+            Un projet, une question ? Écrivez-moi à
+            <a href="mailto:contact@exemple.com">contact@exemple.com</a>
+            ou retrouvez-moi sur les réseaux.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://mastodon.social" rel="noopener noreferrer">Mastodon</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© <span id="year"></span> — Votre nom. Fabriqué en HTML & CSS statiques.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
